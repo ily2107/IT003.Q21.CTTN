@@ -1,8 +1,9 @@
 #Created by Adorkable Crab
 import sys
 import time
+import numpy as np
 n=int(input())
-a=list(map(float,input().split()))
+a=np.array(list(map(float,input().split())))
 b=[0]*n
 def combine(a,l,mid,r):
     i,j=l,mid+1
