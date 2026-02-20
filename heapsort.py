@@ -1,8 +1,9 @@
 #Created by Adorkable Crab
 import sys
 import time
+import numpy as np
 n=int(input())
-a=list(map(float,input().split()))
+a=np.array(list(map(float,input().split())))
 def heapify(a,n,idx):
     largest=idx
     l=2*idx+1
